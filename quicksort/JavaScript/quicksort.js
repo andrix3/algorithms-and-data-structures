@@ -1,9 +1,9 @@
 function partition(array, low, high) {
 	const middle = Math.floor((high + low ) / 2);
-  const pivot = array[middle];  // choose middle element as pivot
-  [array[middle], array[high]] = [array[high], array[middle]]; // swap middle to end
+  const pivot = array[middle];  
+  [array[middle], array[high]] = [array[high], array[middle]]; 
   
-  let pivotIndex = high;  // store index of pivot
+  let pivotIndex = high;  
   let i = low;
 
   while (i < pivotIndex) {
@@ -33,5 +33,6 @@ function quicksort(array, low = 0, high = array.length - 1) {
 
   return array;
 }
+
 
 module.export = quicksort;
